@@ -1,0 +1,1102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F5395E17-6752-4E6E-96E1-16C5DB301C69}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CBClient</RootNamespace>
+    <AssemblyName>CBClient</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>D:\Projects\Publishs\CoBaoDT\Client\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://cobaodientuclickone.vtds.vn/CoBaoDT/Client/</InstallUrl>
+    <UpdateUrl>http://cobaodientuclickone.vtds.vn/CoBaoDT/Client/</UpdateUrl>
+    <ProductName>CoBaoDT</ProductName>
+    <PublisherName>DSVN</PublisherName>
+    <MinimumRequiredVersion>1.0.0.463</MinimumRequiredVersion>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>default.htm</WebPage>
+    <ApplicationRevision>464</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>true</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>train6.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>E7E7782D516C3D2DBD64C43D5A48BBEF869769EF</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>CBClient_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=14.1.0.37, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Publishs\CoBaoDT\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="Flurl">
+      <HintPath>..\..\TechSpec_CoBao\WindowsServiceSchedularApp\packages\Flurl.2.8.2\lib\net40\Flurl.dll</HintPath>
+    </Reference>
+    <Reference Include="Flurl.Http">
+      <HintPath>..\..\TechSpec_CoBao\WindowsServiceSchedularApp\packages\Flurl.Http.2.4.2\lib\net45\Flurl.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>C:\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.1016.290\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\portable-net45+win8+wp8+wpa81\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Xamarin.Essentials, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Essentials.1.7.0\lib\netstandard1.0\Xamarin.Essentials.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adapter\CoBaoService.cs" />
+    <Compile Include="BaoCao\BCCTGioDonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\BCCTGioDonForm.Designer.cs">
+      <DependentUpon>BCCTGioDonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\BCGioDonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\BCGioDonForm.Designer.cs">
+      <DependentUpon>BCGioDonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\BCDauMoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\BCDauMoForm.Designer.cs">
+      <DependentUpon>BCDauMoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\BCHQSDDMForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\BCHQSDDMForm.Designer.cs">
+      <DependentUpon>BCHQSDDMForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\BCTacNghiepForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\BCTacNghiepForm.Designer.cs">
+      <DependentUpon>BCTacNghiepForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\BCTTNLForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\BCTTNLForm.Designer.cs">
+      <DependentUpon>BCTTNLForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\BCTHNLForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\BCTHNLForm.Designer.cs">
+      <DependentUpon>BCTHNLForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\BCKTKTForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\BCKTKTForm.Designer.cs">
+      <DependentUpon>BCKTKTForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\BCTHSPTNForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\BCTHSPTNForm.Designer.cs">
+      <DependentUpon>BCTHSPTNForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\BCVanDungForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\BCVanDungForm.Designer.cs">
+      <DependentUpon>BCVanDungForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\BKTinhLuongForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\BKTinhLuongForm.Designer.cs">
+      <DependentUpon>BKTinhLuongForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\PreViewDialogKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\PreViewDialogKH.Designer.cs">
+      <DependentUpon>PreViewDialogKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaoCao\PreViewDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaoCao\PreViewDialog.Designer.cs">
+      <DependentUpon>PreViewDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BLLDaos\BaoCaoDAO.cs" />
+    <Compile Include="BLLDaos\DanhMucDAO.cs" />
+    <Compile Include="BLLDaos\DinhMucGADAO.cs" />
+    <Compile Include="BLLDaos\DinhMucDAO.cs" />
+    <Compile Include="BLLDaos\DoanThongGADAO.cs" />
+    <Compile Include="BLLTypes\BaoCaoType.cs" />
+    <Compile Include="BLLTypes\CoBaoGAType.cs" />
+    <Compile Include="BLLTypes\CoBaoType.cs" />
+    <Compile Include="BLLTypes\DaNangType.cs" />
+    <Compile Include="BLLTypes\DanhMucType.cs" />
+    <Compile Include="BLLTypes\DoanThongType.cs" />
+    <Compile Include="BLLTypes\DuongSatType.cs" />
+    <Compile Include="BLLTypes\HaNoiType.cs" />
+    <Compile Include="BLLTypes\KeHoachType.cs" />
+    <Compile Include="BLLTypes\KtLogicType.cs" />
+    <Compile Include="BLLTypes\NhienLieuTypes.cs" />
+    <Compile Include="BLLTypes\SaiGonType.cs" />
+    <Compile Include="BLLTypes\VinhType.cs" />
+    <Compile Include="BLLTypes\XuatCoBaoType.cs" />
+    <Compile Include="BLLTypes\YenVienType.cs" />
+    <Compile Include="CoBaoGAs\CoBaoGAForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoBaoGAs\CoBaoGAForm.Designer.cs">
+      <DependentUpon>CoBaoGAForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoBaoGAs\DoanThongGAForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoBaoGAs\DoanThongGAForm.Designer.cs">
+      <DependentUpon>DoanThongGAForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoBaoGAs\KTLogicGAForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoBaoGAs\KTLogicGAForm.Designer.cs">
+      <DependentUpon>KTLogicGAForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoBaoGAs\NhapCBGADialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoBaoGAs\NhapCBGADialog.Designer.cs">
+      <DependentUpon>NhapCBGADialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoBaoGAs\XuatCoBaoGAForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoBaoGAs\XuatCoBaoGAForm.Designer.cs">
+      <DependentUpon>XuatCoBaoGAForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoBaoGAs\XuatDoanThongGAForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CoBaoGAs\XuatDoanThongGAForm.Designer.cs">
+      <DependentUpon>XuatDoanThongGAForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CoBaoDto.cs" />
+    <Compile Include="Common\Common.cs" />
+    <Compile Include="Controls\SmartDate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DaNang\DNKhuDoanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DaNang\DNKhuDoanForm.Designer.cs">
+      <DependentUpon>DNKhuDoanForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DaNang\DNNLDinhMucForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DaNang\DNNLDinhMucForm.Designer.cs">
+      <DependentUpon>DNNLDinhMucForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\CongLenhSKForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\CongLenhSKForm.Designer.cs">
+      <DependentUpon>CongLenhSKForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\GaChuyenDonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\GaChuyenDonForm.Designer.cs">
+      <DependentUpon>GaChuyenDonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\MienPhatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\MienPhatForm.Designer.cs">
+      <DependentUpon>MienPhatForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\MacTauForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\MacTauForm.Designer.cs">
+      <DependentUpon>MacTauForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\DauMayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\DauMayForm.Designer.cs">
+      <DependentUpon>DauMayForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\TaiXeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\TaiXeForm.Designer.cs">
+      <DependentUpon>TaiXeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\LyTrinhForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\LyTrinhForm.Designer.cs">
+      <DependentUpon>LyTrinhForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DuongSat\DSKeHoachForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DuongSat\DSKeHoachForm.Designer.cs">
+      <DependentUpon>DSKeHoachForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DuongSat\DSNLDinhMucForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DuongSat\DSNLDinhMucForm.Designer.cs">
+      <DependentUpon>DSNLDinhMucForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HaNoi\HNPhieuThuongForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HaNoi\HNPhieuThuongForm.Designer.cs">
+      <DependentUpon>HNPhieuThuongForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HaNoi\HNKhuDoanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HaNoi\HNKhuDoanForm.Designer.cs">
+      <DependentUpon>HNKhuDoanForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HaNoi\HNNLDinhMucForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HaNoi\HNNLDinhMucForm.Designer.cs">
+      <DependentUpon>HNNLDinhMucForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HaNoi\HNDMDinhMucForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HaNoi\HNDMDinhMucForm.Designer.cs">
+      <DependentUpon>HNDMDinhMucForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HaNoi\HNNLPDinhMucForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HaNoi\HNNLPDinhMucForm.Designer.cs">
+      <DependentUpon>HNNLPDinhMucForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\ChangePWD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\ChangePWD.Designer.cs">
+      <DependentUpon>ChangePWD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HeThong\NhatKyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HeThong\NhatKyForm.Designer.cs">
+      <DependentUpon>NhatKyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Library\AppGlobal.cs" />
+    <Compile Include="BLLDaos\CoBaoDAO.cs" />
+    <Compile Include="BLLDaos\DoanThongDAO.cs" />
+    <Compile Include="Library\Library.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AdapterStatus.cs" />
+    <Compile Include="Models\Configuration.cs" />
+    <Compile Include="Models\LoginData.cs" />
+    <Compile Include="Models\LoginInput.cs" />
+    <Compile Include="Models\Response.cs" />
+    <Compile Include="Models\ResponseDetail.cs" />
+    <Compile Include="NhapLieu\CoBaoDTForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhapLieu\CoBaoDTForm.Designer.cs">
+      <DependentUpon>CoBaoDTForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhapLieu\XuatDoanThongForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhapLieu\XuatDoanThongForm.Designer.cs">
+      <DependentUpon>XuatDoanThongForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhapLieu\XuatCoBaoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhapLieu\XuatCoBaoForm.Designer.cs">
+      <DependentUpon>XuatCoBaoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhapLieu\DoanThongForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhapLieu\DoanThongForm.Designer.cs">
+      <DependentUpon>DoanThongForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\HSQDNLForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\HSQDNLForm.Designer.cs">
+      <DependentUpon>HSQDNLForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhapLieu\KTLogicForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhapLieu\KTLogicForm.Designer.cs">
+      <DependentUpon>KTLogicForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhapLieu\NhapCBDTDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhapLieu\NhapCBDTDialog.Designer.cs">
+      <DependentUpon>NhapCBDTDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhienLieu\BCSoKhoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhienLieu\BCSoKhoForm.Designer.cs">
+      <DependentUpon>BCSoKhoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhienLieu\BCTonKhoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhienLieu\BCTonKhoForm.Designer.cs">
+      <DependentUpon>BCTonKhoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhienLieu\BCTheKhoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhienLieu\BCTheKhoForm.Designer.cs">
+      <DependentUpon>BCTheKhoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhienLieu\BCXuatKhoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhienLieu\BCXuatKhoForm.Designer.cs">
+      <DependentUpon>BCXuatKhoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhienLieu\BCNhapKhoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhienLieu\BCNhapKhoForm.Designer.cs">
+      <DependentUpon>BCNhapKhoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhienLieu\LoaiDauMoForm .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhienLieu\LoaiDauMoForm .Designer.cs">
+      <DependentUpon>LoaiDauMoForm .cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhienLieu\PhieuXuatDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhienLieu\PhieuXuatDialog.Designer.cs">
+      <DependentUpon>PhieuXuatDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhienLieu\PhieuNhapDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhienLieu\PhieuNhapDialog.Designer.cs">
+      <DependentUpon>PhieuNhapDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhienLieu\PhieuXuatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhienLieu\PhieuXuatForm.Designer.cs">
+      <DependentUpon>PhieuXuatForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhienLieu\PhieuNhapForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhienLieu\PhieuNhapForm.Designer.cs">
+      <DependentUpon>PhieuNhapForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhienLieu\BangGiaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhienLieu\BangGiaForm.Designer.cs">
+      <DependentUpon>BangGiaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhienLieu\HopDongForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhienLieu\HopDongForm.Designer.cs">
+      <DependentUpon>HopDongForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhienLieu\NhaCCForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhienLieu\NhaCCForm.Designer.cs">
+      <DependentUpon>NhaCCForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhienLieu\PreViewNXDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhienLieu\PreViewNXDialog.Designer.cs">
+      <DependentUpon>PreViewNXDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SaiGon\SGKhuDoanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaiGon\SGKhuDoanForm.Designer.cs">
+      <DependentUpon>SGKhuDoanForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SaiGon\SGNLDinhMucForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaiGon\SGNLDinhMucForm.Designer.cs">
+      <DependentUpon>SGNLDinhMucForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SaiGon\SGHSTanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaiGon\SGHSTanForm.Designer.cs">
+      <DependentUpon>SGHSTanForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Services\AuthenticationService.cs" />
+    <Compile Include="Services\HttpHelper.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="Vinh\VINLDDinhMucForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vinh\VINLDDinhMucForm.Designer.cs">
+      <DependentUpon>VINLDDinhMucForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vinh\VINLDinhMucForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vinh\VINLDinhMucForm.Designer.cs">
+      <DependentUpon>VINLDinhMucForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vinh\VIHSTanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vinh\VIHSTanForm.Designer.cs">
+      <DependentUpon>VIHSTanForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vinh\VIKhuDoanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vinh\VIKhuDoanForm.Designer.cs">
+      <DependentUpon>VIKhuDoanForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vinh\VIDMDinhMucForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vinh\VIDMDinhMucForm.Designer.cs">
+      <DependentUpon>VIDMDinhMucForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YenVien\YVDMDinhMucForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YenVien\YVDMDinhMucForm.Designer.cs">
+      <DependentUpon>YVDMDinhMucForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YenVien\YVNLPDinhMucForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YenVien\YVNLPDinhMucForm.Designer.cs">
+      <DependentUpon>YVNLPDinhMucForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YenVien\YVNLDinhMucForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YenVien\YVNLDinhMucForm.Designer.cs">
+      <DependentUpon>YVNLDinhMucForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YenVien\YVKhuDoanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YenVien\YVKhuDoanForm.Designer.cs">
+      <DependentUpon>YVKhuDoanForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BaoCao\BCCTGioDonForm.resx">
+      <DependentUpon>BCCTGioDonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\BCGioDonForm.resx">
+      <DependentUpon>BCGioDonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\BCDauMoForm.resx">
+      <DependentUpon>BCDauMoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\BCHQSDDMForm.resx">
+      <DependentUpon>BCHQSDDMForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\BCTacNghiepForm.resx">
+      <DependentUpon>BCTacNghiepForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\BCTTNLForm.resx">
+      <DependentUpon>BCTTNLForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\BCTHNLForm.resx">
+      <DependentUpon>BCTHNLForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\BCKTKTForm.resx">
+      <DependentUpon>BCKTKTForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\BCTHSPTNForm.resx">
+      <DependentUpon>BCTHSPTNForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\BCVanDungForm.resx">
+      <DependentUpon>BCVanDungForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\BKTinhLuongForm.resx">
+      <DependentUpon>BKTinhLuongForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\PreViewDialogKH.resx">
+      <DependentUpon>PreViewDialogKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaoCao\PreViewDialog.resx">
+      <DependentUpon>PreViewDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoBaoGAs\CoBaoGAForm.resx">
+      <DependentUpon>CoBaoGAForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoBaoGAs\DoanThongGAForm.resx">
+      <DependentUpon>DoanThongGAForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoBaoGAs\KTLogicGAForm.resx">
+      <DependentUpon>KTLogicGAForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoBaoGAs\NhapCBGADialog.resx">
+      <DependentUpon>NhapCBGADialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoBaoGAs\XuatCoBaoGAForm.resx">
+      <DependentUpon>XuatCoBaoGAForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoBaoGAs\XuatDoanThongGAForm.resx">
+      <DependentUpon>XuatDoanThongGAForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DaNang\DNKhuDoanForm.resx">
+      <DependentUpon>DNKhuDoanForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DaNang\DNNLDinhMucForm.resx">
+      <DependentUpon>DNNLDinhMucForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\CongLenhSKForm.resx">
+      <DependentUpon>CongLenhSKForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\GaChuyenDonForm.resx">
+      <DependentUpon>GaChuyenDonForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\MienPhatForm.resx">
+      <DependentUpon>MienPhatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\MacTauForm.resx">
+      <DependentUpon>MacTauForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\DauMayForm.resx">
+      <DependentUpon>DauMayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\TaiXeForm.resx">
+      <DependentUpon>TaiXeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\LyTrinhForm.resx">
+      <DependentUpon>LyTrinhForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DuongSat\DSKeHoachForm.resx">
+      <DependentUpon>DSKeHoachForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DuongSat\DSNLDinhMucForm.resx">
+      <DependentUpon>DSNLDinhMucForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HaNoi\HNPhieuThuongForm.resx">
+      <DependentUpon>HNPhieuThuongForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HaNoi\HNKhuDoanForm.resx">
+      <DependentUpon>HNKhuDoanForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HaNoi\HNNLDinhMucForm.resx">
+      <DependentUpon>HNNLDinhMucForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HaNoi\HNDMDinhMucForm.resx">
+      <DependentUpon>HNDMDinhMucForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HaNoi\HNNLPDinhMucForm.resx">
+      <DependentUpon>HNNLPDinhMucForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\ChangePWD.resx">
+      <DependentUpon>ChangePWD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HeThong\NhatKyForm.resx">
+      <DependentUpon>NhatKyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhapLieu\CoBaoDTForm.resx">
+      <DependentUpon>CoBaoDTForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhapLieu\XuatDoanThongForm.resx">
+      <DependentUpon>XuatDoanThongForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhapLieu\XuatCoBaoForm.resx">
+      <DependentUpon>XuatCoBaoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhapLieu\DoanThongForm.resx">
+      <DependentUpon>DoanThongForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\HSQDNLForm.resx">
+      <DependentUpon>HSQDNLForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhapLieu\KTLogicForm.resx">
+      <DependentUpon>KTLogicForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhapLieu\NhapCBDTDialog.resx">
+      <DependentUpon>NhapCBDTDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhienLieu\BCSoKhoForm.resx">
+      <DependentUpon>BCSoKhoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhienLieu\BCTonKhoForm.resx">
+      <DependentUpon>BCTonKhoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhienLieu\BCTheKhoForm.resx">
+      <DependentUpon>BCTheKhoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhienLieu\BCXuatKhoForm.resx">
+      <DependentUpon>BCXuatKhoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhienLieu\BCNhapKhoForm.resx">
+      <DependentUpon>BCNhapKhoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhienLieu\LoaiDauMoForm .resx">
+      <DependentUpon>LoaiDauMoForm .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhienLieu\PhieuXuatDialog.resx">
+      <DependentUpon>PhieuXuatDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhienLieu\PhieuNhapDialog.resx">
+      <DependentUpon>PhieuNhapDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhienLieu\PhieuXuatForm.resx">
+      <DependentUpon>PhieuXuatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhienLieu\PhieuNhapForm.resx">
+      <DependentUpon>PhieuNhapForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhienLieu\BangGiaForm.resx">
+      <DependentUpon>BangGiaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhienLieu\HopDongForm.resx">
+      <DependentUpon>HopDongForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhienLieu\NhaCCForm.resx">
+      <DependentUpon>NhaCCForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhienLieu\PreViewNXDialog.resx">
+      <DependentUpon>PreViewNXDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Report\RptBCSoKho.rdlc" />
+    <EmbeddedResource Include="Report\RptBCTonKho.rdlc" />
+    <EmbeddedResource Include="Report\RptBCTheKho.rdlc" />
+    <EmbeddedResource Include="Report\RptBCXuatKhoTH.rdlc" />
+    <EmbeddedResource Include="Report\RptBCNhapKhoTH.rdlc" />
+    <EmbeddedResource Include="Report\RptPhieuXuat.rdlc" />
+    <EmbeddedResource Include="Report\RptPhieuNhap.rdlc" />
+    <EmbeddedResource Include="Report\RptCoBaoGA.rdlc" />
+    <EmbeddedResource Include="Report\RptHQSDDV.rdlc" />
+    <EmbeddedResource Include="Report\RptKeHoach.rdlc" />
+    <EmbeddedResource Include="Report\RptTacNghiepKT.rdlc" />
+    <EmbeddedResource Include="Report\RptTacNghiepQL.rdlc" />
+    <EmbeddedResource Include="Report\RptGioDonCT.rdlc" />
+    <EmbeddedResource Include="Report\RptHQSDLM.rdlc" />
+    <EmbeddedResource Include="Report\RptPhieuRutGio.rdlc" />
+    <EmbeddedResource Include="Report\RptThanhTichDM.rdlc" />
+    <EmbeddedResource Include="Report\RptThanhTichTX.rdlc" />
+    <EmbeddedResource Include="Report\RptBKDauMo.rdlc" />
+    <EmbeddedResource Include="Report\RptThucHienNLKD.rdlc" />
+    <EmbeddedResource Include="Report\RptTonNL.rdlc" />
+    <EmbeddedResource Include="Report\RptThucHienNL.rdlc" />
+    <EmbeddedResource Include="Report\RptBKTinhLuong.rdlc" />
+    <EmbeddedResource Include="Report\RptCoBao - Copy.rdlc" />
+    <EmbeddedResource Include="Report\RptCoBao.rdlc" />
+    <EmbeddedResource Include="Report\RptGioDon.rdlc" />
+    <EmbeddedResource Include="Report\RptKTKTTH.rdlc" />
+    <EmbeddedResource Include="Report\RptKTKTXN.rdlc" />
+    <EmbeddedResource Include="Report\RptSPCD.rdlc" />
+    <EmbeddedResource Include="Report\RptTHSPTN.rdlc" />
+    <EmbeddedResource Include="Report\RptThanhTichNL.rdlc" />
+    <EmbeddedResource Include="Report\RptTongHopNL.rdlc" />
+    <EmbeddedResource Include="Report\RptVanDung.rdlc" />
+    <EmbeddedResource Include="SaiGon\SGKhuDoanForm.resx">
+      <DependentUpon>SGKhuDoanForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaiGon\SGNLDinhMucForm.resx">
+      <DependentUpon>SGNLDinhMucForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaiGon\SGHSTanForm.resx">
+      <DependentUpon>SGHSTanForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vinh\VINLDDinhMucForm.resx">
+      <DependentUpon>VINLDDinhMucForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vinh\VINLDinhMucForm.resx">
+      <DependentUpon>VINLDinhMucForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vinh\VIHSTanForm.resx">
+      <DependentUpon>VIHSTanForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vinh\VIKhuDoanForm.resx">
+      <DependentUpon>VIKhuDoanForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vinh\VIDMDinhMucForm.resx">
+      <DependentUpon>VIDMDinhMucForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YenVien\YVDMDinhMucForm.resx">
+      <DependentUpon>YVDMDinhMucForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YenVien\YVNLPDinhMucForm.resx">
+      <DependentUpon>YVNLPDinhMucForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YenVien\YVNLDinhMucForm.resx">
+      <DependentUpon>YVNLDinhMucForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YenVien\YVKhuDoanForm.resx">
+      <DependentUpon>YVKhuDoanForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.BangNhatKy.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.BCCoBaoCTInfo.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.BCCoBaoGACTInfo.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.BCCoBaoTTInfo.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.BCCTGioDonInfo.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.BCDCSPTNInfo.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.BCGioDonInfo.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.BCHieuQuaSDDMInfo.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.BCKeHoachInfo.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.BCKTKTTHInfo.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.BCKTKTXNInfo.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.BCSPCDInfo.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.BCSSKTKTInfo.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.BCTHNLInfo.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.BCTHNLKDInfo.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.BCTHSPTNInfo.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.BCTongHopInfo.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.BCTonNLInfo.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.BCTTDMInfo.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.BCTTNLInfo.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.BCTTTXInfo.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.BCVanDungInfo.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.BKDauMoInfo.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.BKTinhLuongInfo.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.CoBao.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.CoBaoALL.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.CoBaoCT.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.CoBaoDM.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.CoBaoGA.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.CoBaoGAALL.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.CoBaoGACT.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.CoBaoGADM.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.CoBaoTT.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.CongLenhSK.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.CongTac.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.CongTy.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.DauMay.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.DMDauMay.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.DmdonVi.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.DMGa.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.DMLoaiDauMo.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.DmlyTrinh.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.DmLyTrinh1.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.DMMacTau.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.DMPhoXe.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.DMTaiXe.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.DmtramNhienLieu.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.DNKhuDoan.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.DNNLDinhMuc.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.DNNLDinhMucTemp.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.DNXuatDT.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.DoanThong.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.DoanThongCT.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.DoanThongDM.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.DoanThongGA.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.DoanThongGACT.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.DoanThongGADM.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.DoanThongGAView.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.DoanThongView.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.DonViDM.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.DonViKT.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.DSNLDinhMuc.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.GaChuyenDon.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.HeSoQdnl.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.HNDMDinhMuc.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.HNKhuDoan.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.HNNLDinhMuc.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.HNNLPDinhMuc.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.HNPhieuThuong.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.HNXuatDT.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.KeHoach.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.KeHoachView.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.KTDonThuan.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.KTDungKB.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.KTNhienLieu.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.KTQuayVong.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.KTVanTocKT.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.LoaiKeHoach.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.LoaiMay.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.LoaiTau.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.LyTrinh.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.MacTau.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.MienPhat.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.NguoiDung.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.NhanVien.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.NhatKy.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.NL_BangGia.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.NL_BCNhapKho.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.NL_BCSoKho.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.NL_BCTheKho.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.NL_BCTonKho.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.NL_BCXuatKho.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.NL_HopDong.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.NL_NhaCC.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.NL_PhieuNhap.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.NL_PhieuNhapCT.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.NL_PhieuXuat.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.NL_PhieuXuatCT.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.SGHSTan.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.SGHSTan1.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.SGKhuDoan.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.SGKhuDoan1.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.SGNLDinhMuc.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.SGNLDinhMuc1.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.SGXuatDT.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.TinhChat.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.Tuyen.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.TuyenMap.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.VIDMDinhMuc.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.ViewBcBKDauMo.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.ViewBcBKLuong.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.ViewBcGioDon.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.ViewBcGioDonCT.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.ViewBcKeHoach.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.ViewBcNhienLieu.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.ViewBcNhienLieuKD.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.ViewBcSSKTKT.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.ViewBcTacNghiep.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.ViewBcTonNL.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.ViewBcTTNhienLieu.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.ViewBcTTTaiXe.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.ViewBcvanDung.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.ViewDauMay.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.ViewDauMay1.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.ViewDMNhanVien.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.ViewDMNhanVien1.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.VIHSTan.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.VIHSTan1.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.VIKhuDoan.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.VIKhuDoan1.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.VINLDDinhMuc.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.VINLDDinhMuc1.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.VINLDinhMuc.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.VINLDinhMuc1.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.VIXuatDT.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.XCoBao.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.XCoBaoCT.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.XCoBaoDM.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.XCoBaoGA.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.XCoBaoGACT.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.XCoBaoGADM.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.YVDMDinhMuc.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.YVDMDinhMuc1.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.YVKhuDoan.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.YVKhuDoan1.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.YVNLDinhMuc.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.YVNLDinhMuc1.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.YVNLPDinhMuc.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.YVNLPDinhMuc1.datasource" />
+    <None Include="Properties\DataSources\CBClient.BLLTypes.YVXuatDT.datasource" />
+    <None Include="Properties\DataSources\CBClient.Library.BCCoBaoCTInfo.datasource" />
+    <None Include="Properties\DataSources\CBClient.Library.BCCoBaoTTInfo.datasource" />
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder_Open.png" />
+    <None Include="Resources\Key.png" />
+    <None Include="Resources\Lock.png" />
+    <None Include="Resources\book.png" />
+    <None Include="Resources\download.png" />
+    <None Include="Resources\Edit.png" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="train6.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Microsoft.ReportViewer.DataVisualization">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.ProcessingObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CoBaoDTs\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
