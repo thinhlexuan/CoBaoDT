@@ -348,6 +348,14 @@
           <DataField>LoiLo</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
+        <Field Name="Qrcode">
+          <DataField>Qrcode</DataField>
+          <rd:TypeName>System.Array</rd:TypeName>
+        </Field>
+        <Field Name="SoCB">
+          <DataField>SoCB</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="TieuThu">
           <DataField>TieuThu</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
@@ -360,7 +368,7 @@
       <rd:DataSetInfo>
         <rd:DataSetName>CBClient.BLLTypes</rd:DataSetName>
         <rd:TableName>BCCoBaoTTInfo</rd:TableName>
-        <rd:ObjectDataSourceType>CBClient.BLLTypes.BCCoBaoTTInfo, CBClient, Version=1.0.0.67, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+        <rd:ObjectDataSourceType>CBClient.BLLTypes.BCCoBaoTTInfo, CBClient, Version=1.0.0.463, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
       </rd:DataSetInfo>
     </DataSet>
     <DataSet Name="CoBaoCTDS">
@@ -494,7 +502,7 @@
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>
-  
+ 
       <Body>
         <ReportItems>
           <Textbox Name="Textbox74">
@@ -520,9 +528,9 @@
             </Paragraphs>
             <rd:DefaultName>Textbox74</rd:DefaultName>
             <Top>0.28575cm</Top>
-            <Left>0.31756cm</Left>
+            <Left>3.08414cm</Left>
             <Height>1.10208cm</Height>
-            <Width>25.34264cm</Width>
+            <Width>22.5443cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -567,8 +575,9 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>Textbox2</rd:DefaultName>
+            <Top>0.1125in</Top>
             <Left>10.08994in</Left>
-            <Height>0.86362in</Height>
+            <Height>0.78236in</Height>
             <Width>1.23713in</Width>
             <ZIndex>1</ZIndex>
             <Style>
@@ -603,9 +612,9 @@
             </Paragraphs>
             <rd:DefaultName>Textbox4</rd:DefaultName>
             <Top>0.57417in</Top>
-            <Left>0.12502in</Left>
+            <Left>1.21423in</Left>
             <Height>0.28752in</Height>
-            <Width>9.97742in</Width>
+            <Width>8.87571in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -6457,7 +6466,6 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <rd:Selected>true</rd:Selected>
                       </CellContents>
                     </TablixCell>
                   </TablixCells>
@@ -6793,6 +6801,22 @@
               </Border>
             </Style>
           </Tablix>
+          <Image Name="Image1">
+            <Source>Database</Source>
+            <Value>=First(Fields!Qrcode.Value, "CoBaoTTDS")</Value>
+            <MIMEType>image/png</MIMEType>
+            <Sizing>Fit</Sizing>
+            <Top>0.1125in</Top>
+            <Left>0.12502in</Left>
+            <Height>0.78236in</Height>
+            <Width>1.08921in</Width>
+            <ZIndex>9</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Image>
         </ReportItems>
         <Height>6.88445in</Height>
         <Style />

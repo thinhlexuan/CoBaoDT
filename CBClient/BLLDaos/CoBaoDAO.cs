@@ -5,10 +5,14 @@ using CBClient.Library;
 using CBClient.Models;
 using CBClient.Services;
 using Newtonsoft.Json;
+using QRCoder;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -125,6 +129,15 @@ namespace CBClient.BLLDaos
                     infobc.DinhMuc = info.NLTieuChuan;
                     infobc.TieuThu = info.NLTieuThu;
                     infobc.LoiLo = info.NLLoiLo;
+                    infobc.SoCB = info.SoCB;
+
+                    QRCodeGenerator qrGenerator = new QRCodeGenerator();
+                    QRCodeData qrCodeData = qrGenerator.CreateQrCode(info.SoCB, QRCodeGenerator.ECCLevel.Q);
+                    QRCode qrCode = new QRCode(qrCodeData);
+                    Bitmap qrCodeImage = qrCode.GetGraphic(20, Color.Black, Color.White, null, 15);
+                    MemoryStream ms = new MemoryStream();
+                    qrCodeImage.Save(ms, ImageFormat.Png);  // save bitmap to a memory stream
+                    infobc.Qrcode = ms.ToArray();
                 }
             }
             //catch(Exception ex)
@@ -176,6 +189,15 @@ namespace CBClient.BLLDaos
                     infobc.DinhMuc = info.NLTieuChuan;
                     infobc.TieuThu = info.NLTieuThu;
                     infobc.LoiLo = info.NLLoiLo;
+                    infobc.SoCB = info.SoCB;
+
+                    QRCodeGenerator qrGenerator = new QRCodeGenerator();
+                    QRCodeData qrCodeData = qrGenerator.CreateQrCode(info.SoCB, QRCodeGenerator.ECCLevel.Q);
+                    QRCode qrCode = new QRCode(qrCodeData);
+                    Bitmap qrCodeImage = qrCode.GetGraphic(20, Color.Black, Color.White, null, 15);
+                    MemoryStream ms = new MemoryStream();
+                    qrCodeImage.Save(ms, ImageFormat.Png);  // save bitmap to a memory stream
+                    infobc.Qrcode = ms.ToArray();
                 }
             }
             //catch(Exception ex)

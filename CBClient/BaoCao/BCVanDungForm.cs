@@ -7,6 +7,10 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Windows.Forms;
+using QRCoder;
+using System.Drawing;
+using System.IO;
+using System.Drawing.Imaging;
 
 namespace CBClient.BaoCao
 {
@@ -81,7 +85,7 @@ namespace CBClient.BaoCao
         {
             sdNgayBD.Value = new DateTime(DateTime.Today.Year, DateTime.Today.Month, 1);
             sdNgayKT.Value = new DateTime(sdNgayBD.Value.Year, sdNgayBD.Value.Month, DateTime.DaysInMonth(sdNgayBD.Value.Year, sdNgayBD.Value.Month));
-            this.reportViewer1.RefreshReport();
+            this.reportViewer1.RefreshReport();            
         }
 
         private void cboLoaiBC_SelectedIndexChanged(object sender, EventArgs e)

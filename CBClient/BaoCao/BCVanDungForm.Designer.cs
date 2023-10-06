@@ -131,8 +131,8 @@
             this.sdNgayKT.Name = "sdNgayKT";
             this.sdNgayKT.Size = new System.Drawing.Size(102, 23);
             this.sdNgayKT.TabIndex = 3;
-            this.sdNgayKT.Text = "24.08.2023";
-            this.sdNgayKT.Value = new System.DateTime(2023, 8, 24, 0, 0, 0, 0);
+            this.sdNgayKT.Text = "06.10.2023";
+            this.sdNgayKT.Value = new System.DateTime(2023, 10, 6, 0, 0, 0, 0);
             this.sdNgayKT.Validated += new System.EventHandler(this.sdNgayKT_Validated);
             // 
             // sdNgayBD
@@ -144,8 +144,8 @@
             this.sdNgayBD.Name = "sdNgayBD";
             this.sdNgayBD.Size = new System.Drawing.Size(102, 23);
             this.sdNgayBD.TabIndex = 2;
-            this.sdNgayBD.Text = "24.08.2023";
-            this.sdNgayBD.Value = new System.DateTime(2023, 8, 24, 0, 0, 0, 0);
+            this.sdNgayBD.Text = "06.10.2023";
+            this.sdNgayBD.Value = new System.DateTime(2023, 10, 6, 0, 0, 0, 0);
             this.sdNgayBD.Validated += new System.EventHandler(this.sdNgayBD_Validated);
             // 
             // label1

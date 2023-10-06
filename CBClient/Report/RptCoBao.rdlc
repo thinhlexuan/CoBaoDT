@@ -304,6 +304,14 @@
           <DataField>LoiLo</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
+        <Field Name="Qrcode">
+          <DataField>Qrcode</DataField>
+          <rd:TypeName>System.Array</rd:TypeName>
+        </Field>
+        <Field Name="SoCB">
+          <DataField>SoCB</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="TieuThu">
           <DataField>TieuThu</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
@@ -316,7 +324,7 @@
       <rd:DataSetInfo>
         <rd:DataSetName>CBClient.BLLTypes</rd:DataSetName>
         <rd:TableName>BCCoBaoTTInfo</rd:TableName>
-        <rd:ObjectDataSourceType>CBClient.BLLTypes.BCCoBaoTTInfo, CBClient, Version=1.0.0.67, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+        <rd:ObjectDataSourceType>CBClient.BLLTypes.BCCoBaoTTInfo, CBClient, Version=1.0.0.463, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
       </rd:DataSetInfo>
     </DataSet>
     <DataSet Name="CoBaoCTDS">
@@ -442,7 +450,7 @@
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>
- 
+
       <Body>
         <ReportItems>
           <Textbox Name="Textbox74">
@@ -468,57 +476,9 @@
             </Paragraphs>
             <rd:DefaultName>Textbox74</rd:DefaultName>
             <Top>0.28575cm</Top>
-            <Left>0.31756cm</Left>
+            <Left>3.08414cm</Left>
             <Height>1.10208cm</Height>
-            <Width>25.34264cm</Width>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
-          <Textbox Name="Textbox2">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>Biểu</Value>
-                    <Style>
-                      <FontFamily>tahoma</FontFamily>
-                      <FontSize>12pt</FontSize>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Center</TextAlign>
-                </Style>
-              </Paragraph>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>ĐMA3</Value>
-                    <Style>
-                      <FontFamily>tahoma</FontFamily>
-                      <FontSize>12pt</FontSize>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style>
-                  <TextAlign>Center</TextAlign>
-                </Style>
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox2</rd:DefaultName>
-            <Left>10.08994in</Left>
-            <Height>0.86362in</Height>
-            <Width>1.23713in</Width>
-            <ZIndex>1</ZIndex>
+            <Width>22.57606cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -551,10 +511,10 @@
             </Paragraphs>
             <rd:DefaultName>Textbox4</rd:DefaultName>
             <Top>0.57417in</Top>
-            <Left>0.12502in</Left>
+            <Left>1.21423in</Left>
             <Height>0.28752in</Height>
-            <Width>9.97742in</Width>
-            <ZIndex>2</ZIndex>
+            <Width>8.88821in</Width>
+            <ZIndex>1</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -3085,7 +3045,7 @@
             <Left>0.12502in</Left>
             <Height>1.75in</Height>
             <Width>11.20209in</Width>
-            <ZIndex>3</ZIndex>
+            <ZIndex>2</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -3477,7 +3437,7 @@
             <Left>0.12502in</Left>
             <Height>0.5in</Height>
             <Width>11.2021in</Width>
-            <ZIndex>4</ZIndex>
+            <ZIndex>3</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -3940,7 +3900,7 @@
             <Left>0.12502in</Left>
             <Height>0.5in</Height>
             <Width>11.2021in</Width>
-            <ZIndex>5</ZIndex>
+            <ZIndex>4</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -4977,7 +4937,7 @@
             <Left>0.12502in</Left>
             <Height>0.5in</Height>
             <Width>11.20205in</Width>
-            <ZIndex>6</ZIndex>
+            <ZIndex>5</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -5750,7 +5710,7 @@
             <Left>0.12502in</Left>
             <Height>0.5in</Height>
             <Width>11.20205in</Width>
-            <ZIndex>7</ZIndex>
+            <ZIndex>6</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -6580,18 +6540,83 @@
             <Left>0.12502in</Left>
             <Height>2in</Height>
             <Width>11.20209in</Width>
-            <ZIndex>8</ZIndex>
+            <ZIndex>7</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
               </Border>
             </Style>
           </Tablix>
+          <Image Name="Image1">
+            <Source>Database</Source>
+            <Value>=First(Fields!Qrcode.Value, "CoBaoTTDS")</Value>
+            <MIMEType>image/png</MIMEType>
+            <Sizing>Fit</Sizing>
+            <Top>0.1125in</Top>
+            <Left>0.12502in</Left>
+            <Height>0.78236in</Height>
+            <Width>1.08921in</Width>
+            <ZIndex>8</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Image>
+          <Textbox Name="Textbox2">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Biểu</Value>
+                    <Style>
+                      <FontFamily>tahoma</FontFamily>
+                      <FontSize>12pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>ĐMA3</Value>
+                    <Style>
+                      <FontFamily>tahoma</FontFamily>
+                      <FontSize>12pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox2</rd:DefaultName>
+            <Top>0.1125in</Top>
+            <Left>10.10244in</Left>
+            <Height>0.78236in</Height>
+            <Width>1.22463in</Width>
+            <ZIndex>9</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
         </ReportItems>
         <Height>6.88445in</Height>
         <Style />
       </Body>
-      <Width>11.32712in</Width>
+      <Width>11.33957in</Width>
       <Page>
         <PageFooter>
           <Height>0.27431in</Height>
@@ -6678,14 +6703,14 @@
         <BottomMargin>0.15in</BottomMargin>
         <Style />
       </Page>
-   
+  
   <ReportParameters>
     <ReportParameter Name="prmLoaibc">
       <DataType>String</DataType>
       <Prompt>ReportParameter1</Prompt>
     </ReportParameter>
   </ReportParameters>
- 
+
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
   <rd:ReportID>5726a88e-b47b-4762-9791-1f9fe8ae711a</rd:ReportID>
 </Report>

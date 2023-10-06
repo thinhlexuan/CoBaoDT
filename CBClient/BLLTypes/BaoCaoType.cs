@@ -3,6 +3,11 @@
 namespace CBClient.BLLTypes
 {
     #region Info
+    public class BCQrcodeInfo
+    {
+        public string StrQrcode { get; set; }
+        public Array ByteQrcode { get; set; }
+    }
     public class BCVanDungInfo
     {
         public short SoTT { get; set; }
@@ -29,7 +34,7 @@ namespace CBClient.BLLTypes
         public decimal ThoiGhep { get; set; }
         public decimal ChuyenDon { get; set; }
         public decimal CongDung { get; set; }
-        public decimal TongCong { get; set; }        
+        public decimal TongCong { get; set; }
     }
 
     public class BCTonNLInfo
@@ -445,7 +450,9 @@ namespace CBClient.BLLTypes
         public decimal TKM { get; set; }
         public decimal DinhMuc { get; set; }
         public decimal TieuThu { get; set; }
-        public decimal LoiLo { get; set; }        
+        public decimal LoiLo { get; set; }
+        public string SoCB { get; set; }
+        public Array Qrcode { get; set; }
     }
 
     public class BCKeHoachInfo
